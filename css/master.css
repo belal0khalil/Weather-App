@@ -1,0 +1,133 @@
+body {
+    background-color: #262936;
+}
+nav  {
+    background-color: #222530 ;
+}
+
+header {
+    background-color: rgb(24, 26, 34);
+    min-height: 700px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+   
+}
+ul li a:hover {
+    background-color: transparent;
+    color: #0baddc !important;
+    border: 2px solid #0baddc ;
+    padding:  6px 18px;
+    border-radius: 40px;
+}
+a.active {
+    background-color: transparent;
+    color: #0baddc !important;
+    border: 2px solid #0baddc ;
+    padding:  6px 18px;
+    border-radius: 40px;
+}
+.main {
+    color: #0baddc !important; 
+}
+.social-backcolor {
+    background-color: #1e202b;
+}
+.social-color {
+    color: #009ad8;
+}
+.fs-12 {
+    font-size: 9px;
+}
+ .left {
+    right: 140px;
+ }
+header {
+    background-image:  url(../images/banner.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.f-btn {
+    background-color: rgb(0, 123, 173);
+    color: rgb(232, 230, 227);
+    transition:  all 0.2s ease-in-out;
+}
+.f-btn:hover {
+    background-color: rgb(44, 110, 136);
+    color: rgb(232, 230, 227); 
+}
+ .w-85 {
+    width: 85%;
+ }
+form input[type="text"] {
+    background-color: rgb(24, 26, 34);
+    color: rgb(232, 230, 227);
+}
+
+form.find-location input:focus {
+    outline: none;
+}
+
+form.find-location input::placeholder{
+    color: white;
+    opacity: 50%;
+  }
+  .row {
+    background-color: #323544;
+  }
+ .forecast-header {
+    background: rgba(0, 0, 0, 0.1) !important; 
+ }
+ .ms {
+    margin-left: -12px;
+    margin-right: -12px;
+ }
+ .temp  {
+  font-size: 75px;
+ }
+ .Temp span  {
+    margin-top: -15px;
+ }
+ .Temp span:nth-child(2) {
+    margin-left: 15px;
+ }
+ .temp span {
+    margin-top: -40px;
+ }
+ .temp span:nth-child(2) {
+    margin-left: 45px;
+ }
+.middle {
+    background-color: #222530;
+}
+
+ .min i {
+    font-size: 9px !important;
+   
+ } 
+  .ml-2 {
+    margin-left: 70px;
+  }
+
+footer form input {
+    outline: none;
+  }
+  .social-links ul li i {
+    transition: all 0.2s ease-in-out;
+  }
+.social-links ul li i:hover {
+   background-color: #0baddc;
+   color: white;
+   cursor: pointer;
+}
+
+.navbar-toggler-icon i {
+    color: white;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-4 ">
+        <div class="container">
+          <a class="navbar-brand " href="./index.html">
+         <div class="d-flex gap-2">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+              </div>
+              <div>
+               <h1 class="h5 text-white m-0 d-flex flex-column ">Weather
+                <span class="fs-12 text-white-50 mt-1">tagline goes here</span>
+               </h1>
+                
+              </div>
+         </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">contact</a>
+              </li>
+              
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+  <header>
+    <div class="container p-2 mx-auto">
+      <form action="" class=" mt-5  w-85 mx-auto position-relative find-location  ">
+        <input class=" w-100 p-3 rounded-pill border-0 search-input" type="text" name="country" class="" placeholder="Find Your Location..." autocomplete="off">
+        <button class="btn  position-absolute end-0 mt-2 mx-2 px-4 f-btn rounded-pill">Find</button>
+       
+      </form>
+    </div>
+     <div class="forecast-table mt-5">
+        <div class="container">
+            <div class="row rounded">
+                <div class="forecast-today col-md-4">
+                  <div class="forecast-header ms d-flex justify-content-between align-items-center p-2 rounded">
+                    <div>
+                        <p class=" m-0 numofday text-white opacity-50 day">Sunday</p>
+                    </div>
+                    <div class="d-flex text-white opacity-50 fs-">
+                        <span class="dayofmounth">01</span>
+                        <span class="mounth">Octobar</span>
+                    </div>
+                  </div>
+                  <div class="forecast-body p-4">
+                    <div class="city text-white-50 fs-5"> Cairo</div>
+                  <div class="temp position-relative  text-white fw-bold">34.3°C</div>
+                  <div >
+                    <img id="temp-image" src="./images/113.png" alt="">
+                  </div>
+                  <div class="forecoast-status">
+                    <p class="ms-2 main">Sunny</p>
+                  </div>
+                  <span class="humidity my-2 me-2 text-white-50 ">
+                  <img src="./images/icon-umberella.png" alt="">
+                  <span class="humidity">20%</span>
+                  </span>
+                  <span class="winds m-2 text-white text-opacity-50">
+                    <img src="images/icon-wind.png" alt="" />
+                    <span  id="winds">18 km/h</span>
+                  </span>
+                  <span  class="weatherTrend m-2 text-white text-opacity-50">
+                    <img src="images/icon-compass.png" alt="" />
+                    <span id="weatherTrend">West</span>
+                  </span>
+                  </div>
+                </div>
+                <div class="forecast-tommorow col-md-4 middle">
+                    <div class="forecast-header ms  p-2 rounded">
+                      <div class="">
+                          <p class="numofday text-white opacity-50 text-center m-0 tommorrowday ">Sunday</p>
+                      </div>
+                    </div>
+                    <div class="forecast-body p-4">
+                        <div class="d-block text-center degree">
+                            <img class="tommorrow-img" src="./images/113.png" alt="">
+                          </div>
+                    <div class="Temp max fs-4 position-relative text-white text-center fw-bold"> 33.8°C</div>
+                    <div class="min-after text-white-50 text-center fs-5 fw-lighter position-relative">23.8°C</i>
+                    </div>
+                    <div class="forecoast-status">
+                      <p class="ms-2 mt-3 main text-center weather-condition-tommorrow">Sunny</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="forecast-after-tommorrow col-md-4 ">
+                    <div class="forecast-header ms  p-2 rounded">
+                      <div class="">
+                          <p class="numofday text-white opacity-50 text-center m-0 aftertommorrowday ">Sunday</p>
+                      </div>
+                    </div>
+                    <div class="forecast-body p-4">
+                        <div class="temp-image d-block text-center">
+                            <img src="./images/113.png" class="aftertommorrow-img" alt="">
+                          </div>
+                    <div class="Temp max-after fs-4 position-relative text-white text-center fw-bold"> 33.8°C</div>
+                      <div class="min-after text-white-50 text-center fs-5 fw-lighter position-relative">23.8°C</i>
+                      </div>
+                    <div class="forecoast-status">
+                      <p class="ms-2 mt-3 main text-center weather-condition-aftertommorrow">Sunny</p>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+         </div>
+     </div>
+  </header>
+  <footer class="mt-4 ms-0 ">
+    <div class="container position-relative d-flex justify-content-between flex-wrap w-100">
+            <form class="w-75 position-relative ml-2 mx-auto">
+                <input class="  w-100  p-3 rounded-pill border-0" type="text" name="country" class="" placeholder="Enter your email to subscribe...">
+                <button class="btn  position-absolute end-0 mt-2 mx-2 px-4 f-btn rounded-pill">Subscribe</button>
+            </form>
+            <div class="social-links  my-2">
+                <ul class="list-unstyled d-flex d-flex  gap-4   ">
+                    <li ><i class=" fs-4  fa-brands fa-facebook social-backcolor p-2 rounded-circle social-color"></i></li>
+                    <li><i class=" fs-4 fa-brands fa-twitter social-backcolor p-2 rounded-circle social-color"></i></li>
+                    <li><i class=" fs-4 fa-brands fa-google social-backcolor p-2 rounded-circle social-color"></i></li>
+                    <li><i class=" fs-4 fa-brands fa-pinterest social-backcolor p-2 rounded-circle social-color "></i></li>
+                </ul>
+            </div>  
+            
+        </div>
+  </footer>
+  <div class="container">
+    <p class="text-white-50 mt-2 ms-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </div>
+     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
