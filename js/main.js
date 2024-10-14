@@ -31,7 +31,7 @@ function tommorrowdata() {
     document.querySelector(".tommorrowday").innerHTML = date.toLocaleDateString("en-us" , {weekday: 'long'});
     document.querySelector(".degree .tommorrow-img").setAttribute('src' , 'https:'+weatherData.forecast.forecastday[1].day.condition.icon )
     document.querySelector(".max").innerHTML = weatherData.forecast.forecastday[1].day.maxtemp_c+ "°C";
-    document.querySelector(".min").innerHTML = weatherData.forecast.forecastday[1].day.mintemp_c+ "°C";
+    document.querySelector(".min-after").innerHTML = weatherData.forecast.forecastday[1].day.mintemp_c+ "°C";
     document.querySelector(".weather-condition-tommorrow").innerHTML = weatherData.forecast.forecastday[1].day.condition.text;
 }
 function aftertommorrow() {
@@ -39,11 +39,11 @@ function aftertommorrow() {
     document.querySelector(".aftertommorrowday").innerHTML = date.toLocaleDateString("en-us" , {weekday: 'long'});
 document.querySelector(".aftertommorrow-img").setAttribute("src" , 'https:'+weatherData.forecast.forecastday[2].day.condition.icon )
 document.querySelector(".max-after").innerHTML = weatherData.forecast.forecastday[2].day.maxtemp_c+ "°C";
-document.querySelector(".min-after").innerHTML = weatherData.forecast.forecastday[2].day.mintemp_c+ "°C";
+document.querySelector(".min-aftertommorrow ").innerHTML = weatherData.forecast.forecastday[2].day.mintemp_c+ "°C";
 document.querySelector(".weather-condition-aftertommorrow").innerHTML = weatherData.forecast.forecastday[1].day.condition.text;
 }
 //// Events
 searchInput.addEventListener("keyup", function() {
     startData(searchInput.value);
-    todayData()
+    
 })
